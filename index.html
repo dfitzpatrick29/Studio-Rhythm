@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critique Field Manual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1>Critique<br>Field Manual</h1>
+            <p class="subtitle">A shared language for witnessing work</p>
+        </header>
+
+        <section class="deck-section">
+            <h2 class="section-title">The 4-Card Critique Deck</h2>
+            
+            <div class="cards-grid">
+                <article class="card" data-card="witness">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="30" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="40" cy="40" r="8" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Witness</h3>
+                    <p class="card-definition">What is actually happening on screen? What do you observe, not assume?</p>
+                    <p class="card-mantra">See what's there.</p>
+                </article>
+
+                <article class="card" data-card="system">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="15" y="15" width="50" height="50" stroke="currentColor" stroke-width="3"/>
+                            <line x1="15" y1="40" x2="65" y2="40" stroke="currentColor" stroke-width="3"/>
+                            <line x1="40" y1="15" x2="40" y2="65" stroke="currentColor" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Name the System</h3>
+                    <p class="card-definition">What rules/logic does the work appear to be following?</p>
+                    <p class="card-mantra">Find the pattern.</p>
+                </article>
+
+                <article class="card" data-card="assumption">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 10 L70 70 L10 70 Z" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="40" cy="55" r="3" fill="currentColor"/>
+                            <line x1="40" y1="30" x2="40" y2="48" stroke="currentColor" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Assumption Check</h3>
+                    <p class="card-definition">What does the work assume about the viewer, context, or meaning?</p>
+                    <p class="card-mantra">Question everything.</p>
+                </article>
+
+                <article class="card" data-card="experiment">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 25 L55 40 L25 55" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Next Experiment</h3>
+                    <p class="card-definition">What single change should be tested next (today)?</p>
+                    <p class="card-mantra">Ship one thing.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="rhythm-section">
+            <h2 class="section-title">Studio Rhythm</h2>
+            
+            <div class="rhythm-container">
+                <div class="rhythm-track">
+                    <div class="phase fast-phase">
+                        <div class="phase-content">
+                            <span class="phase-label">FAST</span>
+                            <span class="phase-description">Generate a playable fragment quickly</span>
+                            <span class="phase-action">Ship early</span>
+                        </div>
+                    </div>
+                    <div class="phase-transition">→</div>
+                    <div class="phase slow-phase">
+                        <div class="phase-content">
+                            <span class="phase-label">SLOW</span>
+                            <span class="phase-description">Refine clarity, interaction, and intent</span>
+                            <span class="phase-action">Make it legible</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rhythm-indicator">
+                    <div class="indicator-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p class="hidden-mantra" title="Name what the work is doing, not what you would do.">Name what the work is doing, not what you would do.</p>
+            <p class="micro-text">Ship early. Revise honestly. Iterate aggressively.</p>
+            <p class="tiny-text">One next experiment.</p>
+        </footer>
+    </main>
+
+    <div class="easter-egg" id="mediumMessage">The medium is the message.</div>
+    <div class="corner-mantra">Fast. Then Slow.</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
