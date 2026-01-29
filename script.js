@@ -1,6 +1,9 @@
 // Critique Field Manual - Interactive Elements
 
 // Easter egg: Show "The medium is the message" on scroll
+// Critique Field Manual - Interactive Elements
+
+// Easter egg: Show "The medium is the message" on scroll
 let scrollTimeout;
 const easterEgg = document.getElementById('mediumMessage');
 
@@ -44,18 +47,21 @@ cards.forEach(card => {
 });
 
 // Rhythm indicator dynamic speed
-const indicator = document.querySelector('.indicator-bar');
-let speed = 4;
+const blob = document.querySelector('.indicator-blob');
+const examIcons = document.querySelector('.examination-icons');
+let speed = 8;
 
 document.querySelector('.fast-phase').addEventListener('click', () => {
-    speed = 2;
-    indicator.style.animationDuration = `${speed}s`;
+    speed = 4;
+    blob.style.animationDuration = `${speed}s`;
+    examIcons.style.animationDuration = `${speed}s`;
     showNotification('Fast mode activated');
 });
 
 document.querySelector('.slow-phase').addEventListener('click', () => {
-    speed = 8;
-    indicator.style.animationDuration = `${speed}s`;
+    speed = 12;
+    blob.style.animationDuration = `${speed}s`;
+    examIcons.style.animationDuration = `${speed}s`;
     showNotification('Slow mode activated');
 });
 
