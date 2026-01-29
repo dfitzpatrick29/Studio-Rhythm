@@ -3,6 +3,7 @@
     --white: #fafafa;
     --gray: #404040;
     --accent: #ff3300;
+    --midnight-blue: #2a4365;
     --border: 2px;
 }
 
@@ -13,8 +14,8 @@
 }
 
 body {
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: var(--white);
+    font-family: 'JetBrains Mono', monospace;
+    background: linear-gradient(180deg, #fafafa 0%, #f5f7fa 100%);
     color: var(--black);
     line-height: 1.4;
     overflow-x: hidden;
@@ -265,14 +266,15 @@ main {
     position: absolute;
     top: 50%;
     left: 0%;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     background: var(--accent);
     border-radius: 50%;
     transform: translate(0%, -50%);
     animation: blobTravel 8s linear infinite;
-    box-shadow: 0 0 20px rgba(255, 51, 0, 0.4);
+    box-shadow: 0 0 20px rgba(255, 51, 0, 0.5);
     z-index: 10;
+    border: 2px solid var(--accent);
 }
 
 @keyframes blobTravel {
@@ -283,7 +285,7 @@ main {
         left: 50%;
     }
     100% {
-        left: calc(100% - 30px);
+        left: calc(100% - 36px);
     }
 }
 
@@ -302,7 +304,7 @@ main {
 .exam-icon {
     width: 28px;
     height: 28px;
-    color: var(--black);
+    color: var(--midnight-blue);
     animation: examFloat 2s ease-in-out infinite;
 }
 
@@ -323,7 +325,7 @@ main {
     }
     100% {
         opacity: 1;
-        left: calc(100% - 30px);
+        left: calc(100% - 36px);
         transform: translateX(-50%) scale(1);
     }
 }
